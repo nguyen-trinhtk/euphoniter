@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Euphoniter</title>
+    <link rel="stylesheet" href="css\style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ea5c9256b2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="navbar container navi">
+            <a href="./index.html">
+                <h2 class="logo">Euphoniter</h2>
+            </a>
+
+            <div class="menu navi" id="menu">
+                <ul class="list">
+                    <li class="list-item">
+                        <a href="index.html" class="list-link">Home</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="./categories.html" class="list-link">Categories</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="./posts.html" class="list-link current">All Posts</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="./about.html" class="list-link">About</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="list list-right">
+                <button class="btn place-items-center" id="theme-toggle-btn">
+                    <i class="ri-moon-line moon-icon"></i>
+                    <i class="ri-sun-line sun-icon"></i>
+                </button>
+
+                <button class="btn place-items-center screen-lg-hidden menu-toggle-icon" id="menu-toggle-icon">
+                    <i class="ri-menu-3-line open-menu-icon"></i>
+                    <i class="ri-close-line close-menu-icon"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <div class="featured-container">
+        <div class="featured-image">
+            <img src="" alt="">
+        </div>
+        <div class="featured-info">
+            <p>Month ● DD</p>
+            <a href="#">
+            <h3>Title</h3>
+            <h6>Subtitle</h6></a>
+        </div>
+    </div>
+    
+
+    <div class="feedback-container">
+    <p class="big" id="scrollToTop">↑</p>
+    <h2>How do you feel? Give me some comments.</h2>
+    <br><br>
+    <form name="msgRecipientForm" id="msgRecipientForm">
+        <div class="input-container">
+            <label for="fname">First Name*:</label>
+            <input type="text" id="fname" name="fname" required>
+        </div>
+        <div class="input-container">
+            <label for="lname">Last Name*:</label>
+            <input type="text" id="lname" name="lname" required>
+        </div>
+
+        <div class="input-container">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="input-container">
+            <label for="message">Message*:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+
+        <div class="submit-container">
+            <input type="submit" value="Submit" class="submit-btn">
+        </div>
+    </form>
+    
+</div>
+<div class="footer">
+    <h3>©Euphoniter by Khanh Nguyen. Do not use any media without permission.</h3>
+    <div class="social-media">
+            <a href="mailto:khanhnguyentrinhthi@gmail.com"><i class="sm fa-brands fa-sharp fa-solid fa-envelope-open"></i></a>
+            <a href="https://www.facebook.com/nicky.humphreys.549/"><i class="sm fa-brands fa-facebook"></i></a>
+            <a href="https://github.com/nguyen-trinhtk"><i class="sm fa-brands fa-github"></i></a>
+            <a href="https://discordapp.com/users/nerdyblockhead#9725"><i class="sm fa-brands fa-discord"></i></a>
+            <a href="https://www.instagram.com/daehkcolbydren/"><i class="sm fa-brands fa-instagram"></i></a>
+    </div></div>
+    
+    
+    <script src="js\script.js"></script>
+</body>
+            
+</html>
