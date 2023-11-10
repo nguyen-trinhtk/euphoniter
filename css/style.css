@@ -338,6 +338,7 @@ body.dark-theme{
     flex-direction: column;
     border: 1px solid var(--text-color);
     height: 30rem;
+    width: 40.1rem;
   }
 
 .post-grid{
@@ -624,10 +625,21 @@ body.dark-theme{
   text-align: center;
   font-size: var(--font-size-xl);
 }
-
+@media screen and (max-width: 1000px) {
+  .menu{
+      z-index: -1;
+  }
+  .menu > .list{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: 100vh;
+  }
+}
 
 @media screen and (max-width: 700px) {
-    .menu{
+    /* .menu{
         z-index: -1;
     }
     .menu > .list{
@@ -636,7 +648,7 @@ body.dark-theme{
         justify-content: center;
         text-align: center;
         height: 100vh;
-    }
+    } */
     .screen-lg-hidden{
         display: block;
     }
@@ -728,7 +740,7 @@ body.dark-theme{
   .post-container {
     flex-direction: row;
     width: 35rem;
-    height: 10rem;
+    height: 20.2rem;
   }
   .post-image {
     height: 20rem;
@@ -778,7 +790,7 @@ body.dark-theme{
     margin-right: 10rem;
   }
   .post-container {
-    height: 30rem;
+    height: 30.2rem;
   }
   .post-image {
     height: 30rem;
@@ -805,7 +817,7 @@ body.dark-theme{
     .post-container {
         flex-direction: row;
         width: calc((100% - 20rem) / 3);
-        height: 35rem;
+        height: 35.2rem;
       }
 
       .post-image {
@@ -859,7 +871,7 @@ body.dark-theme{
   padding-bottom: 100px;
   border: 1px solid var(--text-color);
   border-radius: 0 0 10px 10px;
-  text-align: center;
+
 }
 
 .big-center-text{
@@ -871,9 +883,47 @@ body.dark-theme{
   font-size: 4rem;
 }
 
-.tabcontent p{
+.tabcontent>p{
   padding: 3rem;
+  padding-top: 5rem;
   font-weight: 400;
   font-size: 2.5rem;
+  text-align: center;
 }
 
+.sort-button{
+  background-color: black;
+  color: white;
+}
+
+table, th, td{
+  border: 1px solid var(--text-color);
+  border-collapse: collapse;
+  margin: auto;
+}
+table{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.about-post-container {
+  position: relative;
+  top: 10rem;
+  border: solid 1px var(--text-color);
+  margin-top: 5rem;
+  padding: 5rem;
+  max-width: 100rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  align-items: center;
+}
+
+.btn-cont{
+  position: relative;
+  top: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -10rem;
+}
