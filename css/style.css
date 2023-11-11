@@ -624,6 +624,29 @@ body.dark-theme{
   text-align: center;
   font-size: var(--font-size-xl);
 }
+
+#sortSelector {
+  margin: auto;
+  position: relative;
+  top:27rem;
+  color: var(--text-color);
+  background-color: var(--secondary-background-color);
+  padding: 10px;
+  font-size: 20px;
+  font-family: inherit;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 5px;
+  width: 40rem;
+  text-align: center;
+}
+
+.sort-container {
+  display: grid;
+  place-items: center;
+}
+
+
 @media screen and (max-width: 1000px) {
   .menu{
       z-index: -1;
@@ -634,6 +657,9 @@ body.dark-theme{
       justify-content: center;
       text-align: center;
       height: 100vh;
+  }
+  .post-container{
+    width: 40.2rem;
   }
 }
 
@@ -890,11 +916,6 @@ body.dark-theme{
   text-align: center;
 }
 
-.sort-button{
-  background-color: black;
-  color: white;
-}
-
 table, th, td{
   border: 1px solid var(--text-color);
   border-collapse: collapse;
@@ -926,3 +947,17 @@ table{
   justify-content: center;
   margin-bottom: -10rem;
 }
+
+.all-posts-container{
+  position: relative;
+  top: 30rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  max-width: 100%;
+}
+
+

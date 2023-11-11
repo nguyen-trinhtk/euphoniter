@@ -188,53 +188,67 @@ function openTab(evt, category) {
 
 document.getElementById("defaultOpen").click();
 
-function sortListDir() {
-  var list, i, switching, b, shouldSwitch, dir, switchcount = 0;
-  list = document.getElementById("all-posts");
-  switching = true;
-  // Set the sorting direction to ascending:
-  dir = "asc";
-  // Make a loop that will continue until no switching has been done:
-  while (switching) {
-    // Start by saying: no switching is done:
-    switching = false;
-    b = Array.from(list.getElementsByClassName("post-container"));
-    // Loop through all post containers:
-    for (i = 0; i < (b.length - 1); i++) {
-      // Start by saying there should be no switching:
-      shouldSwitch = false;
-      /* Check if the next item should switch place with the current item,
-      based on the sorting direction (asc or desc): */
-      if (dir == "asc") {
-        if (b[i].querySelector("h3").textContent.toLowerCase() > b[i + 1].querySelector("h3").textContent.toLowerCase()) {
-          /* If next item is alphabetically lower than current item,
-          mark as a switch and break the loop: */
-          shouldSwitch = true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (b[i].querySelector("h3").textContent.toLowerCase() < b[i + 1].querySelector("h3").textContent.toLowerCase()) {
-          /* If next item is alphabetically higher than current item,
-          mark as a switch and break the loop: */
-          shouldSwitch = true;
-          break;
-        }
+function toDate(str) {
+  let date = str.slice(6);
+  const monthMap = {
+  jan: '01',
+  feb: '02',
+  mar: '03',
+  apr: '04',
+  may: '05',
+  jun: '06',
+  jul: '07',
+  aug: '08',
+  sep: '09',
+  oct: '10',
+  nov: '11',
+  dec: '12'
+};
+let month = monthMap[str.slice(0, 3)];
+return (month+date)
+}
+
+
+function sortList() {
+var list, i, switching, b, shouldSwitch, dir, switchcount = 0;
+list = document.getElementById("id01");
+switching = true;
+dir = document.getElementById("sortSelector").value;
+while (switching) {
+  switching = false;
+  b = list.getElementsByClassName("post-info");
+  for (i = 0; i < b.length - 1; i++) {
+    shouldSwitch = false;
+    if (dir === "latest") {
+      if (toDate(b[i].getElementsByTagName("p")[0].innerHTML.toLowerCase()) < toDate(b[i + 1].getElementsByTagName("p")[0].innerHTML.toLowerCase())) {
+        shouldSwitch = true;
+        break;
       }
-    }
-    if (shouldSwitch) {
-      /* If a switch has been marked, make the switch
-      and mark that a switch has been done: */
-      list.insertBefore(b[i + 1], b[i]);
-      switching = true;
-      // Each time a switch is done, increase switchcount by 1:
-      switchcount++;
-    } else {
-      /* If no switching has been done AND the direction is "asc",
-      set the direction to "desc" and run the while loop again. */
-      if (switchcount == 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
+    } else if (dir === "earliest") {
+      if (toDate(b[i].getElementsByTagName("p")[0].innerHTML.toLowerCase()) > toDate(b[i + 1].getElementsByTagName("p")[0].innerHTML.toLowerCase())) {
+        shouldSwitch = true;
+        break;
+      }
+    } else if (dir === "titleAZ") {
+      if (b[i].getElementsByTagName("h3")[0].innerHTML.toLowerCase() > b[i + 1].getElementsByTagName("h3")[0].innerHTML.toLowerCase()) {
+        shouldSwitch = true;
+        break;
+      }
+    } else if (dir === "titleZA") {
+      if (b[i].getElementsByTagName("h3")[0].innerHTML.toLowerCase() < b[i + 1].getElementsByTagName("h3")[0].innerHTML.toLowerCase()) {
+        shouldSwitch = true;
+        break;
       }
     }
   }
+  if (shouldSwitch) {
+    b[i].parentNode.parentNode.insertBefore(b[i + 1].parentNode, b[i].parentNode);
+    switching = true;
+    switchcount++;
+  } else {
+    if (switchcount === 0) {
+      break;
+    }
+  }
+}
 }

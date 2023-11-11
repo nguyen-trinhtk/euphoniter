@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<title>Sort a HTML List Alphabetically</title>
+<body>
+
+    <p>Sort the list by:</p>
+    <select id="sortSelector" onchange="sortList()">
+      <option value="latest">Latest</option>
+      <option value="earliest">Earliest</option>
+      <option value="titleAZ">Title A-Z</option>
+      <option value="titleZA">Title Z-A</option>
+    </select>
+
+<div id="id01">
+    <div class="post-container">
+        <div class="post-image">
+            <img src="./images/music-what-is-it.jpg" alt="">
+        </div>
+        <div class="post-info">
+            <p>Mar ● 02</p>
+            <a href="./posts/music-what-is-it.html">
+            <h3>Music - what is it?</h3>
+            <h6 class="hide-sm" class="hide-sm">What is music? Let's find out!</h6></a>
+        </div>       
+</div>
+
+<div class="post-container">
+    <div class="post-image">
+        <img src="./images/cage.jpg" alt="">
+    </div>
+    <div class="post-info">
+        <p>May ● 01</p>
+        <a href="./posts/sound-of-silence.html">
+        <h3>The Sound of Silence: John Cage's 4'33"</h3>
+        <h6 class="hide-sm">Do you know what silence sounds like? ...</h6></a>
+    </div>       
+</div>
+
+<div class="post-container">
+<div class="post-image">
+    <img src="" alt="">
+</div>
+<div class="post-info">
+    <p>Aug ● 17</p>
+    <a href="./posts/pythagoras.html">
+    <h3>Pythagoras and Music</h3>
+    <h6 class="hide-sm">This great Greek mathematician is also a stone-setter for music theory.</h6></a>
+</div>       
+</div>
+
+<div class="post-container">
+    <div class="post-image">
+        <img src="" alt="">
+    </div>
+    <div class="post-info">
+        <p>Sep ● 05</p>
+        <a href="./posts/crab-canon.html">
+        <h3>Bach's Crab Canon</h3>
+        <h6 class="hide-sm">Discover a very-mathematical composition</h6></a>
+    </div>       
+</div>
+
+<div class="post-container">
+    <div class="post-image">
+        <img src="" alt="">
+    </div>
+    <div class="post-info">
+        <p>October ● 15</p>
+        <a href="./posts/mathematicians-in-music.html">
+        <h3>Classical mathematicians in music</h3>
+        <h6 class="hide-sm">Can arts and sciences cross? The answer is, SURE</h6></a>
+    </div>       
+</div>
+
+<div class="post-container">
+<div class="post-image">
+    <img src="" alt="">
+</div>
+<div class="post-info">
+    <p>November ● 01</p>
+    <a href="./posts/world-genres.html">
+    <h3>A Genre for Each Country</h3>
+    <h6 class="hide-sm">Every country has each own symbolic musical styles</h6></a>
+</div>       
+</div>
+
+<div class="post-container">
+    <div class="post-image">
+        <img src="./images/the-evolution-of-music.jpg" alt="">
+    </div>
+    <div class="post-info">
+        <p>Mar ● 15</p>
+        <a href="./posts/evolution-of-music.html">
+        <h3>The Evolution of Music</h3>
+        <h6 class="hide-sm">From bone flute tunes to trendy pop songs</h6></a>
+    </div>       
+</div>
+
+<div class="post-container">
+<div class="post-image">
+    <img src="./images/prehistoric.jpg" alt="">
+</div>
+<div class="post-info">
+    <p>Mar ● 27</p>
+    <a href="./posts/early-music.html">
+    <h3>The first tunes: Prehistoric, Ancient and Medieval Music</h3>
+    <h6 class="hide-sm">Our first musical steps</h6></a>
+</div>       
+</div>
+
+<div class="post-container">
+    <div class="post-image">
+        <img src="./images/from-bach-to-stravinsky.png" alt="">
+    </div>
+    <div class="post-info">
+        <p>Apr ● 21</p>
+        <a href="./posts/from-bach-to-stravinsky.html">
+        <h3>From Bach to Stravinsky</h3>
+        <h6 class="hide-sm">The breakthrough of music</h6></a>
+    </div>       
+</div>
+
+<div class="post-container">
+    <div class="post-image">
+        <img src="" alt="">
+    </div>
+    <div class="post-info">
+        <p>May ● 28</p>
+        <a href="./posts/jazz.html">
+        <h3>Breaking the Conventions: the Rise of Jazz</h3>
+        <h6 class="hide-sm">From New Orleans to the World...</h6></a>
+    </div>       
+</div>
+
+<div class="post-container">
+<div class="post-image">
+    <img src="" alt="">
+</div>
+<div class="post-info">
+    <p>Jun ● 28</p>
+    <a href="./posts/modern-music.html">
+    <h3>Modern music: what we listen today</h3>
+    <h6 class="hide-sm">The development of music during 20th and 21st centuries</h6></a>
+</div>       
+</div>
+
+<div class="post-container">
+    <div class="post-image">
+        <img src="" alt="">
+    </div>
+    <div class="post-info">
+        <p>Jul ● 21</p>
+        <a href="./posts/world-music.html">
+        <h3>World Music</h3>
+        <h6 class="hide-sm">Discover how music is different in different places</h6></a>
+    </div>       
+</div>
+
+<div class="post-container">
+        <div class="post-image">
+            <img src="./images/pitches.jpg" alt="">
+        </div>
+        <div class="post-info">
+            <p>Apr ● 05</p>
+            <a href="./posts/pitches.html">
+            <h3>Pitches</h3>
+            <h6 class="hide-sm">Do Re Mi Fa Sol La Ti...what are they?</h6></a>
+        </div>       
+</div>
+
+<div class="post-container">
+<div class="post-image">
+    <img src="./images/intervals.jpg" alt="">
+</div>
+<div class="post-info">
+    <p>Apr ● 11</p>
+    <a href="./posts/intervals.html">
+    <h3>Intervals</h3>
+    <h6 class="hide-sm">The stairsteps of music</h6></a>
+</div>       
+</div>
+
+<div class="post-container">
+    <div class="post-image">
+        <img src="" alt="">
+    </div>
+    <div class="post-info">
+        <p>May ● 10</p>
+        <a href="./posts/rhythm-time-signature.html">
+        <h3>Rhythms and Time Signatures</h3>
+        <h6 class="hide-sm">Different emphasis and timing can make a song different!</h6></a>
+    </div>       
+</div>
+
+<div class="post-container">
+    <div class="post-image">
+        <img src="./images/triad.jpg" alt="">
+    </div>
+    <div class="post-info">
+        <p>Jun ● 07</p>
+        <a href="./posts/triad-chords.html">
+        <h3>CHORDS: triads</h3>
+        <h6 class="hide-sm">The most basic type of chords</h6></a>
+    </div>       
+</div>
+
+<div class="post-container">
+    <div class="post-image">
+        <img src="" alt="">
+    </div>
+    <div class="post-info">
+        <p>Jun ● 20</p>
+        <a href="./posts/consonance-dissonance.html">
+        <h3>Consonance and Dissonance</h3>
+        <h6 class="hide-sm">Comfy or jarring, every sound defines the song.</h6></a>
+    </div>       
+</div>
+
+<div class="post-container">
+<div class="post-image">
+    <img src="" alt="">
+</div>
+<div class="post-info">
+    <p>Jul ● 07</p>
+    <a href="./posts/transposition-circle-of-fifths.html">
+    <h3>Transposition and the Circle of Fifths</h3>
+    <h6 class="hide-sm">How to turn a C Major song into a F major? Find out now!</h6></a>
+</div>       
+</div>
+
+<div class="post-container">
+        <div class="post-image">
+            <img src="./images/instruments.png" alt="">
+        </div>
+        <div class="post-info">
+            <p>Jun ● 01</p>
+            <a href="./posts/musical-instruments.html">
+            <h3>Musical Instruments: an introduction</h3>
+            <h6 class="hide-sm">Piano, guitar, and more, what are they?</h6></a>
+        </div>       
+</div>
+
+<div class="post-container">
+    <div class="post-image">
+        <img src="" alt="">
+    </div>
+    <div class="post-info">
+        <p>Aug ● 09</p>
+        <a href="./posts/keyboard.html">
+        <h3>Keyboard Instruments</h3>
+        <h6 class="hide-sm">Piano, organ. harpsichord,..what are they?</h6></a>
+    </div>       
+</div>
+
+<div class="post-container">
+<div class="post-image">
+    <img src="" alt="">
+</div>
+<div class="post-info">
+    <p>Aug ● 29</p>
+    <a href="./posts/strings-pluckedstrings.html">
+    <h3>Strings and Plucked String</h3>
+    <h6 class="hide-sm">Find out about violin's family and guitar's family!</h6></a>
+</div>       
+</div>
+
+<div class="post-container">
+    <div class="post-image">
+        <img src="" alt="">
+    </div>
+    <div class="post-info">
+        <p>Sep ● 19</p>
+        <a href="./posts/vocal.html">
+        <h3>Vocal</h3>
+        <h6 class="hide-sm">From 'Queen of the Night' to 'My heart will go on', vocal performances is still widely loved.</h6></a>
+    </div>       
+</div>
+
+<div class="post-container">
+    <div class="post-image">
+        <img src="" alt="">
+    </div>
+    <div class="post-info">
+        <p>Sep ● 26</p>
+        <a href="./posts/drums-percussions.html">
+        <h3>Drums and Percussions</h3>
+        <h6 class="hide-sm">Kung chi pak chi</h6></a>
+    </div>       
+</div>
+</div>
+
+<script>
+function toDate(str) {
+    let date = str.slice(6);
+    const monthMap = {
+    jan: '01',
+    feb: '02',
+    mar: '03',
+    apr: '04',
+    may: '05',
+    jun: '06',
+    jul: '07',
+    aug: '08',
+    sep: '09',
+    oct: '10',
+    nov: '11',
+    dec: '12'
+  };
+  let month = monthMap[str.slice(0, 3)];
+  return (month+date)
+}
+
+
+function sortList() {
+  var list, i, switching, b, shouldSwitch, dir, switchcount = 0;
+  list = document.getElementById("id01");
+  switching = true;
+  dir = document.getElementById("sortSelector").value;
+  while (switching) {
+    switching = false;
+    b = list.getElementsByClassName("post-info");
+    for (i = 0; i < b.length - 1; i++) {
+      shouldSwitch = false;
+      if (dir === "latest") {
+        if (toDate(b[i].getElementsByTagName("p")[0].innerHTML.toLowerCase()) < toDate(b[i + 1].getElementsByTagName("p")[0].innerHTML.toLowerCase())) {
+          shouldSwitch = true;
+          break;
+        }
+      } else if (dir === "earliest") {
+        if (toDate(b[i].getElementsByTagName("p")[0].innerHTML.toLowerCase()) > toDate(b[i + 1].getElementsByTagName("p")[0].innerHTML.toLowerCase())) {
+          shouldSwitch = true;
+          break;
+        }
+      } else if (dir === "titleAZ") {
+        if (b[i].getElementsByTagName("h3")[0].innerHTML.toLowerCase() > b[i + 1].getElementsByTagName("h3")[0].innerHTML.toLowerCase()) {
+          shouldSwitch = true;
+          break;
+        }
+      } else if (dir === "titleZA") {
+        if (b[i].getElementsByTagName("h3")[0].innerHTML.toLowerCase() < b[i + 1].getElementsByTagName("h3")[0].innerHTML.toLowerCase()) {
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      b[i].parentNode.parentNode.insertBefore(b[i + 1].parentNode, b[i].parentNode);
+      switching = true;
+      switchcount++;
+    } else {
+      if (switchcount === 0) {
+        break;
+      }
+    }
+  }
+}
+
+
+</script>
+</body>
+</html>
