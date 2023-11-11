@@ -392,13 +392,12 @@ body.dark-theme{
 
 .about-me-container{
     margin: auto;
+    width: 80vw;
     position: relative;
     top: 30rem;
     border: solid var(--text-color) 1px;
     display: flex;
     flex-direction: row;
-    width: 90vw;
-    height: auto;
 }
 
 .about-img{
