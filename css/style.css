@@ -776,7 +776,7 @@ body.dark-theme{
     flex: 1;
   }
   .rcnt-cont{
-    height: 40rem;
+    height: 60rem;
   }
   .hide-sm{
     display: block;
@@ -828,7 +828,7 @@ body.dark-theme{
   }
   .rcnt-cont{
     margin: 5rem;
-    height: 30rem;
+    
     width: 50rem;
   }
   .hide-sm{
